@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elementos</title>
+</head>
+<body>
+
+  <div id="lista"></div>
+  <button id="botão">Adicionar</button>
+
+  <script>
+    var botão = document.getElementById ("botão")
+    botão.addEventListener ("click", clicado)
+
+    function clicado() {
+      
+      const paragrafos = document.createElement("p");
+      paragrafos.textContent = "Item adicionado";
+
+      // Adiciona o parágrafo dentro da div com id "lista"
+      const lista = document.getElementById("lista");
+      lista.appendChild(paragrafos);
+    }
+  </script>
+
+</body>
+</html>
