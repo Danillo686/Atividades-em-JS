@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bloco">Bloco 1</div>
+    <div class="bloco">Bloco 2</div>
+    <div class="bloco">Bloco 3</div>
+
+    <script>
+        const select = document.querySelectorAll(".bloco");
+
+        select[0].style.backgroundColor = "red";
+        select[1].style.backgroundColor = "blue";
+        select[2].style.backgroundColor = "green";
+    </script>
+</body>
+</html>
